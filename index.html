@@ -30,7 +30,7 @@
               Open Sentry
               <div class="sub header">Open Source Identity & Access Management System</div>
           </h1>
-      
+
           <p>
             The Open Sentry Stack is sponsored by <a href="https://www.fullrate.dk">Fullrate</a> a danish Internet Service Provider.
           </p>
@@ -38,8 +38,34 @@
       </div>
 
     </div>
-    
+
     <img src="assets/images/opensentry-architecture.svg" alt="The Open Sentry Architecture"/>
-    
+
+
+    <p>
+      <a href="https://github.com/OpenSentry/opensentry">The Open Sentry Stack</a> consist of:
+      <ul>
+        <li>Identity Provider, IDP - Provides an API for identity authentication and resouce ownership verification</li>
+        <li>Access & Authorization Provider, AAP - Provides an API for access and authorization control</li>
+        <li>OAuth2 & OpenId Connect Provider, Ory Hydra - Provides session control and OAuth2 and OpenId flows</li>
+        <li>Messaging System, NATS - Provides Pub/Sub for events</li>
+        <li>Storage using graphs, Neo4J - Provides a different take on access control</li>
+        <li>Reverse Proxy, Ory OAthKeeper - Provides uniform access to system components</li>
+        <li>Docker - Provides containerization and process isolation</li>
+      </ul>
+    </p>
+
+    <p>
+      The idea of The Open Sentry Stack is to provide system developers with a tool to enforce logical functional security in their applications.<br>
+      Think of the system as a trust sphere which spawn strings of trust to applications as long as the applications use AAP for judgement.<br>
+      The systems provides operates on a set of ideas and concepts like:
+      <ul>
+        <li>Deny by default - Assume code will fail and let the code structure falltrough to deny</li>
+        <li>Absence of information means deny - If its not in the graph it means deny</li>
+        <li>TLS by default - Assume untrusted networking, pay the price and encrypt by default even test environments (Beyond Corp)</li>
+        <li>Dog food - Use exposed endpoints aswell as access models internally in the system aswell (Bootstrap with self)</li>
+      </ul>
+    </p>
+
   </body>
 </html>
