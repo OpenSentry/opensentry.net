@@ -12,17 +12,3 @@ body {
 .column {
   max-width: 450px;
 }
-
-.white {
-  color: #fff;
-}
-
-a.white, a:visited {
-  color: #fff;
-}
-a:hover {
-  color: #ebebeb;
-}
-a:active {
-  color: #ebebeb;
-}
