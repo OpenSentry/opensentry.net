@@ -8,6 +8,7 @@
 
     <link href="assets/libs/fomantic/dist/semantic.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/main.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="assets/libs/jquery/3.4.1.min.js" ></script>
     <script type="text/javascript" src="assets/libs/fomantic/dist/semantic.min.js" ></script>
   </head>
   <body>
@@ -24,23 +25,36 @@
     </div>
 
     <div class="ui padded middle aligned center aligned grid">
-      <div class="column">
-        <div style="margin-top:50px">
-          <h1 class="ui aligned header">
+      <div class="column" style="min-width:500px">
+        <div style="margin-top:50px;">
+          <h1 class="ui aligned header" style="font-size:3em;line-height:1.5em">
               Open Sentry
-              <div class="sub header">Open Source Identity & Access Management System</div>
+              <div class="sub header" style="font-size:0.5em">Identity & Access Management System</div>
           </h1>
 
-          <p>
-            The Open Sentry Stack is sponsored by <a href="https://www.fullrate.dk">Fullrate</a> a danish Internet Service Provider.
-          </p>
+          <div class="ui clearing divider"></div>
+
+          <a class="ui button" href="https://github.com/opensentry">
+            <i class="github icon"></i>
+            View on Github
+          </a>
+
+          <a class="ui button">
+            <i class="book icon"></i>
+            Docs
+          </a>
+
+          <a class="ui primary button" href="https://hub.docker.com/u/opensentry">
+            <i class="docker icon"></i>
+            Download
+          </a>
+
         </div>
       </div>
 
     </div>
 
     <img src="assets/images/opensentry-architecture.svg" alt="The Open Sentry Architecture"/>
-
 
     <p>
       <a href="https://github.com/OpenSentry/opensentry">The Open Sentry Stack</a> consist of:
@@ -66,6 +80,12 @@
         <li>Dog food - Use exposed endpoints aswell as access models internally in the system aswell (Bootstrap with self)</li>
       </ul>
     </p>
+
+    <footer style="width:100%;background:#2980B9;height:50px;padding:15px 0;text-align:center">
+      <p style="color:white">
+        The Open Sentry Stack is sponsored by <a href="https://www.fullrate.dk">Fullrate</a> a danish Internet Service Provider.
+      </p>
+    </footer>
 
   </body>
 </html>

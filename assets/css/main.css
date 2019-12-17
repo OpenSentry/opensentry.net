@@ -10,5 +10,16 @@ body {
 }
 
 .column {
-  max-width: 450px;
+  max-width: 500px;
+}
+
+footer a, footer a:visited {
+  color:white;
+  font-weight:bold;
+}
+
+footer a:active, footer a:hover {
+  color:white;
+  font-weight:bold;
+  text-decoration:underline;
 }
