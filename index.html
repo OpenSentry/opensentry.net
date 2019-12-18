@@ -25,8 +25,8 @@
     </div>
 
     <div class="ui padded middle aligned center aligned grid">
-      <div class="column" style="min-width:500px">
-        <div style="margin-top:50px;">
+      <div class="column">
+        <div style="margin:50px 0;">
           <h1 class="ui aligned header" style="font-size:3em;line-height:1.5em">
               Open Sentry
               <div class="sub header" style="font-size:0.5em">Identity & Access Management System</div>
@@ -51,8 +51,36 @@
 
         </div>
       </div>
-
     </div>
+
+    <section style="width:100%;min-height:200px;padding:30px 20px">
+      <div class="ui center aligned stackable grid">
+        <div class="three wide column">
+          <i class="huge times circle icon" style="width:auto;"></i>
+
+          <h3>Deny by default</h3>
+          <p>Assume code will fail and let the code structure falltrough to deny</p>
+        </div>
+        <div class="three wide column">
+          <i class="huge lock icon" style="width:auto;"></i>
+
+          <h3>TLS by default</h3>
+          <p>Assume untrusted networking, pay the price and encrypt by default even test environments (Beyond Corp)</p>
+        </div>
+        <div class="three wide column">
+          <i class="huge dog icon" style="width:auto;"></i>
+
+          <h3>Dog food</h3>
+          <p>Use exposed endpoints aswell as access models internally in the system aswell (Bootstrap with self)</p>
+        </div>
+        <div class="three wide column">
+          <i class="huge question circle icon" style="width:auto;"></i>
+
+          <h3>Absence of information means deny</h3>
+          <p>If it's not in the graph it means deny</p>
+        </div>
+      </div>
+    </section>
 
     <img src="assets/images/opensentry-architecture.svg" alt="The Open Sentry Architecture"/>
 
