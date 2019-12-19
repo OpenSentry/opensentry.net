@@ -9,8 +9,22 @@ body {
   min-height:100%;
 }
 
+main {
+  min-height:100%;
+  padding-bottom:50px;
+}
+
 .column {
   max-width: 500px;
+}
+
+footer {
+  height:50px;
+  width:100%;
+  margin-top:-50px;
+  background:#2980B9;
+  padding:15px 0;
+  text-align:center;
 }
 
 footer a, footer a:visited {

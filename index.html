@@ -13,80 +13,84 @@
   </head>
   <body>
 
-    <div class="ui top fixed menu inverted" style="border:none;">
-      <div class="item" style="background:#2980B9">
-        <img src="/assets/images/fingerprint.svg" />
+    <main>
+
+      <div class="ui top fixed menu inverted" style="border:none;">
+        <div class="item" style="background:#2980B9">
+          <img src="/assets/images/fingerprint.svg" />
+        </div>
+        <a href="/" class="item">Home</a>
+        <a class="item">Docs</a>
+        <a class="item">Blog</a>
+        <a href="https://github.com/opensentry" class="right item icon"><i class="github icon large"></i></a>
+        <a href="https://hub.docker.com/u/opensentry" class="item icon"><i class="docker icon large"></i></a>
       </div>
-      <a href="/" class="item">Home</a>
-      <a class="item">Docs</a>
-      <a class="item">Blog</a>
-      <a href="https://github.com/opensentry" class="right item icon"><i class="github icon large"></i></a>
-      <a href="https://hub.docker.com/u/opensentry" class="item icon"><i class="docker icon large"></i></a>
-    </div>
 
-    <div class="ui padded middle aligned center aligned grid">
-      <div class="column">
-        <div style="margin:50px 0;">
-          <h1 class="ui aligned header" style="font-size:3em;line-height:1.5em">
-              Open Sentry
-              <div class="sub header" style="font-size:0.5em">Identity & Access Management System</div>
-          </h1>
+      <div class="ui padded middle aligned center aligned grid">
+        <div class="column">
+          <div style="margin:50px 0;">
+            <h1 class="ui aligned header" style="font-size:3em;line-height:1.5em">
+                Open Sentry
+                <div class="sub header" style="font-size:0.5em">Identity & Access Management System</div>
+            </h1>
 
-          <div class="ui clearing divider"></div>
+            <div class="ui clearing divider"></div>
 
-          <a class="ui button" href="https://github.com/opensentry">
-            <i class="github icon"></i>
-            View on Github
-          </a>
+            <a class="ui button" href="https://github.com/opensentry">
+              <i class="github icon"></i>
+              View on Github
+            </a>
 
-          <a class="ui button" href="/docs/architecture.html">
-            <i class="book icon"></i>
-            Docs
-          </a>
+            <a class="ui button" href="/docs/architecture.html">
+              <i class="book icon"></i>
+              Docs
+            </a>
 
-          <a class="ui primary button" href="https://hub.docker.com/u/opensentry">
-            <i class="docker icon"></i>
-            Download
-          </a>
+            <a class="ui primary button" href="https://hub.docker.com/u/opensentry">
+              <i class="docker icon"></i>
+              Download
+            </a>
 
-        </div>
-      </div>
-    </div>
-
-    <section style="width:100%;min-height:200px;padding:30px 20px">
-      <div class="ui center aligned stackable grid">
-        <div class="three wide column">
-          <i class="huge times circle icon" style="width:auto;"></i>
-
-          <h3>Deny by default</h3>
-          <p>Assume code will fail and let the code structure falltrough to deny</p>
-        </div>
-        <div class="three wide column">
-          <i class="huge lock icon" style="width:auto;"></i>
-
-          <h3>TLS by default</h3>
-          <p>Assume untrusted networking, pay the price and encrypt by default even test environments (Beyond Corp)</p>
-        </div>
-        <div class="three wide column">
-          <i class="huge bone icon" style="width:auto;"></i>
-
-          <h3>Dog food</h3>
-          <p>Use exposed endpoints aswell as access models internally in the system aswell (Bootstrap with self)</p>
-        </div>
-        <div class="three wide column">
-          <i class="huge question circle icon" style="width:auto;"></i>
-
-          <h3>Absence of information means deny</h3>
-          <p>If it's not in the graph it means deny</p>
+          </div>
         </div>
       </div>
-    </section>
 
-    <footer style="width:100%;background:#2980B9;height:50px;padding:15px 0;text-align:center;position:absolute;bottom:0;margin-top:50px;">
-      <p style="color:white">
-        The Open Sentry Stack is sponsored by <a href="https://www.fullrate.dk">Fullrate</a> a danish Internet Service Provider.
-      </p>
-    </footer>
+      <section style="width:100%;min-height:200px;padding:30px 20px">
+        <div class="ui center aligned stackable grid">
+          <div class="three wide column">
+            <i class="huge times circle icon" style="width:auto;"></i>
+
+            <h3>Deny by default</h3>
+            <p>Assume code will fail and let the code structure falltrough to deny</p>
+          </div>
+          <div class="three wide column">
+            <i class="huge lock icon" style="width:auto;"></i>
+
+            <h3>TLS by default</h3>
+            <p>Assume untrusted networking, pay the price and encrypt by default even test environments (Beyond Corp)</p>
+          </div>
+          <div class="three wide column">
+            <i class="huge bone icon" style="width:auto;"></i>
+
+            <h3>Dog food</h3>
+            <p>Use exposed endpoints aswell as access models internally in the system aswell (Bootstrap with self)</p>
+          </div>
+          <div class="three wide column">
+            <i class="huge question circle icon" style="width:auto;"></i>
+
+            <h3>Absence of information means deny</h3>
+            <p>If it's not in the graph it means deny</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+      <footer>
+        <p style="color:white">
+          The Open Sentry Stack is sponsored by <a href="https://www.fullrate.dk">Fullrate</a>.
+        </p>
+      </footer>
 
   </body>
 </html>
