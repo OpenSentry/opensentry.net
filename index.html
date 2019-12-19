@@ -3,19 +3,19 @@
     <meta charset="utf-8">
 
     <title>Open Sentry</title>
-    <meta name="description" content="{{ .title }}">
+    <meta name="description" content="Open Sentry">
     <meta name="author" content="OpenSentry">
 
-    <link href="assets/libs/fomantic/dist/semantic.min.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/main.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="assets/libs/jquery/3.4.1.min.js" ></script>
-    <script type="text/javascript" src="assets/libs/fomantic/dist/semantic.min.js" ></script>
+    <link href="/assets/libs/fomantic/dist/semantic.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/main.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/assets/libs/jquery/3.4.1.min.js" ></script>
+    <script type="text/javascript" src="/assets/libs/fomantic/dist/semantic.min.js" ></script>
   </head>
   <body>
 
     <div class="ui top fixed menu inverted" style="border:none;">
       <div class="item" style="background:#2980B9">
-        <img src="assets/images/fingerprint.svg" />
+        <img src="/assets/images/fingerprint.svg" />
       </div>
       <a class="item">Home</a>
       <a class="item">Docs</a>
@@ -39,7 +39,7 @@
             View on Github
           </a>
 
-          <a class="ui button">
+          <a class="ui button" href="/docs/architecture.html">
             <i class="book icon"></i>
             Docs
           </a>
@@ -82,34 +82,7 @@
       </div>
     </section>
 
-    <img src="assets/images/opensentry-architecture.svg" alt="The Open Sentry Architecture"/>
-
-    <p>
-      <a href="https://github.com/OpenSentry/opensentry">The Open Sentry Stack</a> consist of:
-      <ul>
-        <li>Identity Provider, IDP - Provides an API for identity authentication and resouce ownership verification</li>
-        <li>Access & Authorization Provider, AAP - Provides an API for access and authorization control</li>
-        <li>OAuth2 & OpenId Connect Provider, Ory Hydra - Provides session control and OAuth2 and OpenId flows</li>
-        <li>Messaging System, NATS - Provides Pub/Sub for events</li>
-        <li>Storage using graphs, Neo4J - Provides a different take on access control</li>
-        <li>Reverse Proxy, Ory OAthKeeper - Provides uniform access to system components</li>
-        <li>Docker - Provides containerization and process isolation</li>
-      </ul>
-    </p>
-
-    <p>
-      The idea of The Open Sentry Stack is to provide system developers with a tool to enforce logical functional security in their applications.<br>
-      Think of the system as a trust sphere which spawn strings of trust to applications as long as the applications use AAP for judgement.<br>
-      The systems operates on a set of ideas and concepts like:
-      <ul>
-        <li>Deny by default - Assume code will fail and let the code structure falltrough to deny</li>
-        <li>Absence of information means deny - If its not in the graph it means deny</li>
-        <li>TLS by default - Assume untrusted networking, pay the price and encrypt by default even test environments (Beyond Corp)</li>
-        <li>Dog food - Use exposed endpoints aswell as access models internally in the system aswell (Bootstrap with self)</li>
-      </ul>
-    </p>
-
-    <footer style="width:100%;background:#2980B9;height:50px;padding:15px 0;text-align:center">
+    <footer style="width:100%;background:#2980B9;height:50px;padding:15px 0;text-align:center;position:absolute;bottom:0;margin-top:50px;">
       <p style="color:white">
         The Open Sentry Stack is sponsored by <a href="https://www.fullrate.dk">Fullrate</a> a danish Internet Service Provider.
       </p>
